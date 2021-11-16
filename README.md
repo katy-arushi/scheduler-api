@@ -125,3 +125,7 @@ Response:
   }
 }
 ```
+### M1 Instructions for Setup
+1. connect to psql and run `CREATE ROLE development LOGIN SUPERUSER PASSWORD 'development';`
+2. then run `CREATE DATABASE scheduler_development with OWNER development;`
+3. then finally, to connect to the database, do `\c scheduler_development development`
